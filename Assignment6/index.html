@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        header nav ul li {
+            margin: 0 10px;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            padding: 20px;
+        }
+        article {
+            flex: 3;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+        aside {
+            flex: 1;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+        aside ul li {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Welcome to My Website</h1>
+            <p>This is the main section of the website. Here you can find various articles and posts about different topics. Feel free to browse and enjoy the content.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
+        </article>
+        <aside>
+            <h2>Related Links</h2>
+            <ul>
+                <li><a href="https://www.bbc.com/news/science-environment-56901261" target="_blank">Climate Change: The Science</a></li>
+                <li><a href="https://www.nationalgeographic.com/science/article/solar-eclipses-2023" target="_blank">Upcoming Solar Eclipses in 2023</a></li>
+                <li><a href="https://www.history.com/topics/inventions/history-of-the-internet" target="_blank">History of the Internet</a></li>
+                <li><a href="https://www.space.com/51-astronomy.html" target="_blank">Astronomy: Exploring the Universe</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>Contact us: email@example.com | +123-456-7890</p>
+    </footer>
+</body>
+</html>
