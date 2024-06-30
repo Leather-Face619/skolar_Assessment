@@ -1,0 +1,139 @@
+/* Grid System */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.row {
+    /* display: grid; */
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.col {
+    grid-column: span 12;
+}
+
+@media (min-width: 768px) {
+    .col-sm {
+        grid-column: span 6;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md {
+        grid-column: span 4;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg {
+        grid-column: span 3;
+    }
+}
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn-primary {
+    background-color: #3498db;
+}
+
+.btn-secondary {
+    background-color: #e74c3c;
+}
+/* Cards */
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+/* Forms */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.input-text {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mt-4 {
+    margin-top: 20px;
+}
+
+.mb-4 {
+    margin-bottom: 20px;
+}
+
+.py-4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.px-4 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
