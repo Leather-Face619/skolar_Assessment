@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db;
+    margin: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Animation 1 */
+#box1 {
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(0);
+        background-color: #2ecc71;
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Animation 2 */
+#box2 {
+    animation-name: rotateScale;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotateScale {
+    0% {
+        transform: rotate(0) scale(1);
+        background-color: #e74c3c;
+    }
+    50% {
+        transform: rotate(180deg) scale(1.2);
+        background-color: #f39c12;
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}

@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #444;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+}
+
+/* Main Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "sidebar-left"
+        "main-content"
+        "sidebar-right"
+        "footer";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+/* Grid Items */
+.grid-item {
+    background-color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #3498db;
+    color: white;
+}
+
+.sidebar-left {
+    grid-area: sidebar-left;
+    background-color: #2ecc71;
+    color: white;
+}
+
+.main-content {
+    grid-area: main-content;
+    background-color: #e74c3c;
+    color: white;
+}
+
+.sidebar-right {
+    grid-area: sidebar-right;
+    background-color: #f39c12;
+    color: white;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #8e44ad;
+    color: white;
+}
+
+/* Media Queries */
+
+/* Tablet Layout */
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-areas: 
+            "header header"
+            "sidebar-left main-content"
+            "sidebar-right main-content"
+            "footer footer";
+        grid-template-rows: auto 1fr 1fr auto;
+        grid-template-columns: 1fr 3fr;
+    }
+}
+
+/* Desktop Layout */
+@media (min-width: 900px) {
+    .grid-container {
+        grid-template-areas: 
+            "header header header"
+            "sidebar-left main-content sidebar-right"
+            "footer footer footer";
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    .navbar ul {
+        justify-content: flex-start;
+    }
+
+    .navbar ul li {
+        margin-right: 20px;
+    }
+}

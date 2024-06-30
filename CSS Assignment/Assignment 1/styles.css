@@ -1,0 +1,59 @@
+/* Element Selector */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Class Selector */
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.external-link {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.external-link:hover {
+    text-decoration: underline;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+/* ID Selector */
+#main-heading {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Attribute Selector */
+a[target="_blank"] {
+    font-style: italic;
+}
+
+/* Pseudo-class Selector */
+a:hover {
+    color: #ff5733;
+}
+
+/* Pseudo-element Selector */
+p::first-line {
+    font-weight: bold;
+}

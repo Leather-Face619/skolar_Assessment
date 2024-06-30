@@ -1,0 +1,74 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Different z-index and positioning */
+
+.box1 {
+    background-color: #3498db;
+    z-index: 2;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.box2 {
+    background-color: #2ecc71;
+    z-index: 3;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.box3 {
+    background-color: #e74c3c;
+    z-index: 1;
+    position: relative;
+    top: -40px;
+    left: 40px;
+}
+
+.box4 {
+    background-color: #f39c12;
+    z-index: 4;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

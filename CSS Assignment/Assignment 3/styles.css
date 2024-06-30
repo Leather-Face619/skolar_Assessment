@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+.typography-section {
+    margin-bottom: 30px;
+}
+
+.typography-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Font Family */
+.serif-font {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sans-serif-font {
+    font-family: Arial, sans-serif;
+}
+
+.monospace-font {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Font Size */
+.small-font {
+    font-size: 12px;
+}
+
+.medium-font {
+    font-size: 16px;
+}
+
+.large-font {
+    font-size: 24px;
+}
+
+/* Font Weight */
+.light-font {
+    font-weight: 300;
+}
+
+.normal-font {
+    font-weight: 400;
+}
+
+.bold-font {
+    font-weight: 700;
+}
+
+/* Font Style */
+.normal-style {
+    font-style: normal;
+}
+
+.italic-style {
+    font-style: italic;
+}
+
+/* Line Height */
+.tight-line-height {
+    line-height: 1.2;
+}
+
+.normal-line-height {
+    line-height: 1.5;
+}
+
+.loose-line-height {
+    line-height: 2;
+}
+
+/* Text Transform */
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.lowercase-text {
+    text-transform: lowercase;
+}
+
+.capitalize-text {
+    text-transform: capitalize;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}

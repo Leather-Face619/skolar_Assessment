@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+/* Solid Colors */
+.text-color {
+    color: #ff5733;
+}
+
+.background-color {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Gradients */
+.gradient-box {
+    padding: 20px;
+    color: #fff;
+    margin: 10px 0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.linear-gradient {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.radial-gradient {
+    background: radial-gradient(circle, #ff7e5f, #feb47b);
+}
+
+/* Background Properties */
+.background-box {
+    height: 200px;
+    margin: 10px 0;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.background-image {
+    background-image: url('https://via.placeholder.com/400');
+    background-size: cover;
+    background-position: center;
+}
+
+.background-repeat {
+    background-image: url('https://via.placeholder.com/100');
+    background-repeat: repeat;
+}
+
+.background-position {
+    background-image: url('https://via.placeholder.com/400');
+    background-position: bottom right;
+    background-size: auto;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}

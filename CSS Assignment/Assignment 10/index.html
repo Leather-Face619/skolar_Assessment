@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive Images Example</h1>
+    </header>
+    <main>
+        <section class="image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuUzeVcZiZWMSJPeOl6zd94sObDXbcJQtXdg&s"
+                 srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuUzeVcZiZWMSJPeOl6zd94sObDXbcJQtXdg&s 600w,
+                 https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuUzeVcZiZWMSJPeOl6zd94sObDXbcJQtXdg&s 900w,
+                 https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuUzeVcZiZWMSJPeOl6zd94sObDXbcJQtXdg&s 1200w"
+                 sizes="(max-width: 600px) 600px,
+                        (max-width: 900px) 900px,
+                        1200px"
+                 alt="Responsive Image Example">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Responsive Images Example</p>
+    </footer>
+</body>
+</html>
